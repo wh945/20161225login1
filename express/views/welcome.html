@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+欢迎,<%=username%>
+<%
+if(error){%>
+<div class="alert alert-danger" role="alert">
+    <%=error%>
+</div>
+<%}
+%>
+<%
+if(success){%>
+<div class="alert alert-success" role="alert">
+    <%=success%>
+</div>
+<%}
+%>
+</body>
+</html>
